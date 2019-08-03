@@ -1,0 +1,898 @@
+/* ========================================
+Informaitin about stylesheet content:
+ - bs4 rest
+ - set margins
+ - background
+ - set the font
+ - Home Images from Header & footer RESET
+ - Portfolio js
+ - dividers
+ - home section
+ - Style Headers
+ - Particle js header
+ - Social button
+ - Sections of one pages
+ - blog section
+ ======================================== */
+
+
+/* ====================
+bs4 rest
+==================== */
+@-ms-viewport{
+	width: device-width;
+}
+.carousel-inner img {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+.dropdown-item{
+	font-size: .9rem;
+}
+/*-- END bs4 rest --*/
+
+
+/* ====================
+Set margins
+==================== */
+.mt-10{
+	margin-top: 5rem !important;
+}
+.mt-20{
+	margin-top: 10rem !important;
+}
+.mb-10{
+	margin-bottom: 5rem !important;
+}
+.mb-20{
+	margin-bottom: 10rem !important;
+}
+/*-- END margins --*/
+
+
+/* ====================
+Background
+==================== */
+html{
+	scroll-behavior: auto;
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	background-attachment: fixed;
+	background-size: cover;
+	background-image: url("../image/bg.jpg");
+	height: 100%;
+	width: 100%;
+	padding-right: 0px; 
+	padding-left: 0px; 
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	/*overflow-x: hidden;*/
+}
+body *{
+	max-width: 100%;
+}
+.then{ /*FOR NON-SINGLE PAGES*/
+	background-color: rgba(220,220,220,.9);
+	min-height: 100%;
+	min-width: 100%;
+}
+.then-single{ /*FOR SINGLE PAGES*/
+	background-color: rgba(220,220,220,.5);
+	min-height: 100%;
+	min-width: 100%;
+}
+
+.rgb-dark{
+	background-color: rgba(0,0,0,.7);
+}
+.rgb-light{
+	background-color: rgba(200,200,200,.7);
+}
+.rgb-secondary{
+	background-color: rgba(100,100,100,.7);
+}
+.rgb-primary{
+	background-color: rgba(30,100,200,.7);
+}
+.rgb-success{
+	background-color: rgba(30,200,100,.7);
+}
+.rgb-danger{
+	background-color: rgba(200,100,30,.7);
+}
+
+.rgb-dark-l{
+	background-color: rgba(0,0,0,.4);
+}
+.rgb-light-l{
+	background-color: rgba(200,200,200,.4);
+}
+.rgb-secondary-l{
+	background-color: rgba(100,100,100,.4);
+}
+.rgb-primary-l{
+	background-color: rgba(30,100,200,.4);
+}
+.rgb-success-l{
+	background-color: rgba(30,200,100,.4);
+}
+.rgb-danger-l{
+	background-color: rgba(200,100,30,.4);
+}
+/* -- Background -- */
+
+/* -- text-shadow -- */
+.text-dark-shadow{
+	text-shadow: 1px 2px 3px #345;
+}
+.text-light-shadow{
+	text-shadow: 1px 2px 3px #f1f1f1;
+}
+/* -- text-shadow -- */
+
+
+/*[class*="-primary"]{}*/
+
+/* ====================
+Set the Font
+==================== */
+@font-face {
+	font-family: 'Oswald';
+	src: url('../font/Oswald/Oswald-Regular.woff2') format('woff2'),
+	url('../font/Oswald/Oswald-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url('../font/Lato/Lato-Regular.woff2') format('woff2'),
+	url('../font/Lato/Lato-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../font/Open_Sans/OpenSans-Regular.woff2') format('woff2'),
+	url('../font/Open_Sans/OpenSans-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Raleway';
+    src: url('../font/Raleway/Raleway-Regular.woff2') format('woff2'),
+        url('../font/Raleway/Raleway-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url('../font/roboto/Roboto-Regular.woff2') format('woff2'),
+	url('../font/roboto/Roboto-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html,
+body{
+	font-family: 'Raleway';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: 'Lato';
+}
+
+p,
+.btn,
+a{
+}
+
+i,
+em{
+	
+}
+
+b,
+strong{
+	
+}
+
+small,
+.small{
+	
+}
+/*-- END font section --*/
+
+
+/* ====================
+Home Images from Header & footer RESET
+==================== */
+.home-header-img{
+	min-height: 250px;
+	max-height: 250px;
+	width: 100%;
+}
+.home-header-img img{
+	background-size: cover;
+}
+
+.home-footer-logo{
+	min-height: 50px;
+	max-height: 50px;
+	width: 100%;
+}
+.home-footer-logo img{
+	background-size: cover;
+}
+/*-- END Home Images from Header & footer RESET --*/
+
+
+/* ====================
+Portfolio js
+==================== */
+#masonfolio .column ,
+#uifolio .column {
+	float: left;
+	display: none; 
+	transition: all .9s;
+}
+#masonfolio .show,
+#uifolio .show{
+	display: block;
+}
+#uifolio img{
+	height: 300px;
+}
+
+#masonfolio img{
+	height: auto;
+}
+
+#myBtnContainer .btn{
+	transition: all .9s;
+}
+
+
+/* ====================
+Dividers
+==================== */
+.dash-divider {
+	border: 1px dashed rgba(0,0,0,.3);
+	width: 50%;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.dot-divider {
+	border: 1px dotted rgba(0,0,0,.3);
+	width: 50%;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.striped-divider{ 
+	background-image: url("../image/divider2.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 50px auto;
+	width: 100%;
+	max-width: 100%;
+	height: 75px;
+}
+.striped-divider2{ 
+	background-image: url("../image/divider.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 50px auto;
+	width: 100%;
+	max-width: 100%;
+	height: 75px;
+}
+/* -- END divider -- */
+
+
+/* ====================
+Home section's
+==================== */
+.main-header{
+	line-height: 1.8rem;
+}
+
+.auther-box{
+
+}
+
+.meet-team{
+
+}
+/* -- END Home section's -- */
+
+
+
+/* ====================
+Style Headers
+==================== */
+.site-header-normal{
+	position: relative;
+}
+.site-header-normal img{
+	height: 700px;
+	width: 100%;
+	background-size: cover;
+}
+
+.site-header-normal .title-box{
+	position: absolute;
+	bottom: 50%;
+	left: 25%;
+	right: 25%;
+	color: #f1f1f1;
+	padding: 5px;
+	opacity: .9;
+	text-shadow: 1px 2px 3px #345;
+}
+
+video {
+	width: 100%;
+	height: auto;
+}
+
+
+/* -- END Style Headers -- */
+
+
+/* ====================
+Particle js header
+==================== */
+canvas{
+	display:block;
+	vertical-align:bottom;
+}
+/* ---- stats.js ---- */
+.count-particles{
+	background: #000022;
+	position: absolute;
+	top: 48px;
+	left: 0;
+	width: 80px;
+	color: #13E8E9;
+	font-size: .8em;
+	text-align: left;
+	text-indent: 4px;
+	line-height: 14px;
+	padding-bottom: 2px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+.js-count-particles{
+	font-size: 1.1em;
+}
+#stats,
+.count-particles{
+	-webkit-user-select: none;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+#stats{
+	border-radius: 3px 3px 0 0;
+	overflow: hidden;
+}
+.count-particles{
+	border-radius: 0 0 3px 3px;
+}
+/* ---- particles.js container ---- */
+#particles-js{
+	width: 100%;
+	height: 100%;
+	/*background-color: #c32aa3;*/
+	background-image: url('../image/Unsplash/Bussiness/med-badr-chemmaoui-630239-unsplash.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+/* -- END Particle js header -- */
+
+
+
+/* ====================
+Social btn
+==================== */
+.social-btn{
+	height: 2.5rem;
+	width: 2.5rem;
+	vertical-align: middle;
+	text-align: center;
+	padding: 10px;
+	transition: all 1s;
+}
+.social-btn:hover{	
+	text-shadow: 0 1px 0 #345;
+}
+
+.social-fb{
+	background-color: #fff;
+	color: #3b5998;
+}
+.social-twitter{
+	background-color: #fff;
+	color: #1da1f2;
+}
+.social-youtube{
+	background-color: #fff;
+	color: #ff0000;
+}
+.social-instagram{
+	background-color: #fff;
+	color: #c32aa3;
+}
+.social-pinterest{
+	background-color: #fff;
+	color: #bd081c;
+}
+.social-linkedin{
+	background-color: #fff;
+	color: #007bb5;
+}
+.social-googleplus{
+	background-color: #fff;
+	color: #db4437;
+}
+.social-google-blue{
+	background-color: #fff;
+	color: #4285f4;
+}
+.social-google-red{
+	background-color: #fff;
+	color: #ea4335;
+}
+.social-google-green{
+	background-color: #fff;
+	color: #34a853;
+}
+.social-google-yellow{
+	background-color: #fff;
+	color: #fbbc05;
+}
+.social-whatsapp{
+	background-color: #fff;
+	color: #25d366;
+}
+.social-tumblr{
+	background-color: #fff;
+	color: #35465d;
+}
+.social-reddit{
+	background-color: #fff;
+	color: #ff4500;
+}
+.social-apple{
+	background-color: #fff;
+	color: #a6b1b7;
+}
+.social-amazon{
+	background-color: #fff;
+	color: #ff9900;
+}
+.social-skype{
+	background-color: #fff;
+	color: #00aff0;
+}
+.social-telegram{
+	background-color: #fff;
+	color: #0088cc;
+}
+
+/*social bt HOVER*/
+.social-fb:hover{
+	color: #fff;
+	background-color: #3b5998;
+}
+.social-twitter:hover{
+	color: #fff;
+	background-color: #1da1f2;
+}
+.social-youtube:hover{
+	color: #fff;
+	background-color: #ff0000;
+}
+.social-instagram:hover{
+	color: #fff;
+	background-color: #c32aa3;
+}
+.social-pinterest:hover{
+	color: #fff;
+	background-color: #bd081c;
+}
+.social-linkedin:hover{
+	color: #fff;
+	background-color: #007bb5;
+}
+.social-googleplus:hover{
+	color: #fff;
+	background-color: #db4437;
+}
+.social-google-blue:hover{
+	color: #fff;
+	background-color: #4285f4;
+}
+.social-google-red:hover{
+	color: #fff;
+	background-color: #ea4335;
+}
+.social-google-green:hover{
+	color: #fff;
+	background-color: #34a853;
+}
+.social-google-yellow:hover{
+	color: #fff;
+	background-color: #fbbc05;
+}
+.social-whatsapp:hover{
+	color: #fff;
+	background-color: #25d366;
+}
+.social-tumblr:hover{
+	color: #fff;
+	background-color: #35465d;
+}
+.social-reddit:hover{
+	color: #fff;
+	background-color: #ff4500;
+}
+.social-apple:hover{
+	color: #fff;
+	background-color: #a6b1b7;
+}
+.social-amazon:hover{
+	color: #fff;
+	background-color: #ff9900;
+}
+.social-skype:hover{
+	color: #fff;
+	background-color: #00aff0;
+}
+.social-telegram:hover{
+	color: #fff;
+	background-color: #0088cc;
+}
+/*SASS*/
+/*
+$facebook: #3b5998;
+$twitter: #1da1f2;
+$youtube: #ff0000;
+$instagrammagenta: #c32aa3;
+$instagramblue: #4c5fd7;
+$instagrampurple: #7232bd;
+$instagramorange: #f46f30;
+$instagramyellow: #ffdc7d;
+$googleblue: #4285f4;
+$googlered: #ea4335; 
+$googleyellow: #fbbc05; 
+$googlegreen: #34a853;
+$pinterest: #bd081c;
+$googleplus: #db4437;
+$linkedin: #007bb5;
+$vimeoblue: #1ab7ea;
+$tumblr: #2c4762;
+$snapchat: #fffc00;
+$whatsappgreen: #25d366;
+$whatsappteal1: #075e54;
+$whatsappteal2: #128c7e;
+$mastodon: #2b90d9;
+$apple: #a6b1b7;
+$amazon: #ff9900;
+$microsoftred: #f35022;
+$microsoftgreen: #80bb03;
+$microsoftblue: #03a5f0;
+$microsoftyellow: #ffb903;
+$periscope: #40a4c4;
+$foursquarepink: #f94877; 
+$foursquarenavy: #073282;
+$foursquareblue: #2d5be3; 
+$swarm: #ffa633;
+$medium: #02b875;
+$skypeblue: #00aff0;
+$skypedkblue: #0078d7;
+$android: #a4c639;
+$stumbleupon: #e94826;
+$flickrpink: #f40083;
+$flickrblue: #006add;
+$yahoo: #430297;
+$twitch: #6441a4;
+$soundcloud: #ff5500;
+$spotifygreen: #1ed760;
+$spotifydarkgreen: #1db954;
+$dribbble: #ea4c89;
+$slackpurple: #4a154b; 
+$slackblue: #36c5f0; 
+$slackgreen: #2eb67d; 
+$slackred: #e01e5a; 
+$slackyellow: #ecb22e; 
+$reddit: #ff5700;
+$deviantart: #05cc47;
+$pocket: #ee4056;
+$quora: #aa2200;
+$quorablue: #2b6dad;
+$slideshareorange: #e68523;
+$slideshareblue: #00a0dc;
+$fivehundredpx: #0099e5;
+$vk: #4a76a8;
+$listlyorange: #df6d46;
+$listlyblue: #52b1b3;
+$vine: #00b489;
+$steam: #171a21;
+$discord: #7289da;
+$telegram: #0088cc;
+*/
+/*SASS*/
+/*LESS*/
+/*
+@facebook: #3b5998;
+@twitter: #1da1f2;
+@youtube: #ff0000;
+@instagrammagenta: #c32aa3;
+@instagramblue: #4c5fd7;
+@instagrampurple: #7232bd;
+@instagramorange: #f46f30;
+@instagramyellow: #ffdc7d;
+@googleblue: #4285f4;
+@googlered: #ea4335; 
+@googleyellow: #fbbc05; 
+@googlegreen: #34a853;
+@pinterest: #bd081c;
+@googleplus: #db4437;
+@linkedin: #007bb5;
+@vimeoblue: #1ab7ea;
+@tumblr: #2c4762;
+@snapchat: #fffc00;
+@whatsappgreen: #25d366;
+@whatsappteal1: #075e54;
+@whatsappteal2: #128c7e;
+@mastodon: #2b90d9;
+@apple: #a6b1b7;
+@amazon: #ff9900;
+@microsoftred: #f35022;
+@microsoftgreen: #80bb03;
+@microsoftblue: #03a5f0;
+@microsoftyellow: #ffb903;
+@periscope: #40a4c4;
+@foursquarepink: #f94877; 
+@foursquarenavy: #073282;
+@foursquareblue: #2d5be3;
+@swarm: #ffa633;
+@medium: #02b875;
+@skypeblue: #00aff0;
+@skypedkblue: #0078d7;
+@android: #a4c639;
+@twitch: #6441a4;
+@stumbleupon: #e94826;
+@flickrpink: #f40083;
+@flickrblue: #006add;
+@yahoo: #430297;
+@soundcloud: #ff5500;
+@spotifygreen: #1ed760;
+@spotifydarkgreen: #1db954;
+@dribbble: #ea4c89;
+@slackpurple: #4a154b; 
+@slackblue: #36c5f0; 
+@slackgreen: #2eb67d; 
+@slackred: #e01e5a; 
+@slackyellow: #ecb22e; 
+@reddit: #ff5700;
+@deviantart: #05cc47;
+@pocket: #ee4056;
+@quora: #aa2200;
+@quorablue: #2b6dad;
+@slideshareorange: #e68523;
+@slideshareblue: #00a0dc;
+@fivehundredpx: #0099e5;
+@vk: #4a76a8;
+@listlyorange: #df6d46;
+@listlyblue: #52b1b3;
+@vine: #00b489;
+@steam: #171a21;
+@discord: #7289da;
+@telegram: #0088cc;
+*/
+/*LESS*/
+
+/* -- END Social btn -- */
+
+
+
+
+/* ====================
+Sections of one pages
+==================== */
+.about-us-section{
+	display: block;
+	position: relative;
+	width: 100%;
+}
+.about-us-section .img{
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 500px;
+}
+.about-us-section .section-part{
+	position: absolute;
+	top: 10%;
+	right: 5%;
+	bottom: 15%;
+	left: 5%;
+	padding: 1.25rem;
+	height: 400px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+
+.services-section{
+
+}
+
+.ourteam-section{
+
+}
+
+.contact-us-section{
+	display: block;
+	position: relative;
+	width: 100%;
+}
+.contact-us-section .img{
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 500px;
+}
+.contact-us-section .section-part{
+	position: absolute;
+	top: 10%;
+	right: 5%;
+	bottom: 15%;
+	left: 5%;
+	padding: 1.25rem;
+	height: 400px;
+	width: 70%;
+	margin: 0 auto;
+}
+/* -- END Sections of one pages -- */
+
+
+
+
+/* ====================
+Blog Section
+==================== */
+.blog-content{
+
+}
+
+.blog-post{
+
+}
+
+.blog-post img{
+	height: 350px;
+	max-height: 350px;
+	width: 100%;
+	background-size: cover;
+}
+
+.blog-post p.card-text{
+	line-height: 1.8rem;
+	font-size: 1.2rem;
+	word-spacing: 0.25rem;
+}
+
+
+.blog-sidebar{
+
+}
+
+.sidebar-widget{
+
+}
+.sidebar-widget img{
+	width: 25%;
+}
+
+.post-comment{
+	
+}
+.post-comment img{
+	width: 100px;
+	height: 100px;
+	align-content: center;
+	align-items: center;
+	vertical-align: middle;
+	margin: 50% auto;
+	margin-left: 25%;
+}
+
+.post-gallery{
+	padding: 15px;
+	margin: 0 auto;
+	/*background-color: #345;
+	min-width: 100%;max-width: 100%;*/
+}
+.post-gallery img{
+	height: 400px;
+	width: 100%;
+}
+
+
+
+img.search-image { /*For search page*/
+	height: auto;
+}
+/* -- END Blog Section -- */
+
+
+.about-us-page{
+	
+}
+
+/* ====================
+Sections of single-blogs
+==================== */
+.blog-header {
+	box-shadow: 0 2px 1px rgba(200,200,200,.5),
+	1px 2px 3px rgba(0,0,0,.5),
+	2px 0 1px rgba(100,100,100,.5);
+	background-image: linear-gradient(180deg, rgba(0,0,0,.3), rgba(200,200,200,.5));
+	min-height: 350px;
+}
+
+img.blog-header{
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.site-logo{
+	height: 100px;
+	max-height: 100px;
+	width: 100px;
+	max-width: 100px;
+}
+
+.blog-header-text h1 a,
+.blog-header-text p{
+	background: hsla(0,50%,100%,.5);
+	padding: 5px;
+}
+
+.blog-post-image{
+	height: 250px;
+}
+
+.single-body{
+	position: relative;
+	display: block;
+}
+.single-body-img{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+/* -- END Sections of blogs -- */
